@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import Carousel from 'react-owl-carousel2';
+// import {OwlCarousel} from 'react-owl-carousel2';
 
 // let prevPath;
 function OwlCarousel ( props ) {
@@ -39,13 +39,14 @@ function OwlCarousel ( props ) {
     let settings = Object.assign( {}, defaultOptions, options );
 
     return (
-        props.children ?
-            props.children.length > 0 || ( props.children && props.children.length === undefined ) ?
-                <Carousel ref={ carouselRef } className={ `owl-carousel ${ adClass }` } options={ settings } events={ events }>
-                    { props.children }
-                </Carousel >
-                : ""
-            : ""
+        // props.children ?
+        //     props.children.length > 0 || ( props.children && props.children.length === undefined ) ?
+        //         <Carousel ref={ carouselRef } className={ `owl-carousel ${ adClass }` } options={ settings } events={ events }>
+        //             { props.children }
+        //         </Carousel >
+        //         : ""
+        //     : ""
+        false
     );
 }
 
